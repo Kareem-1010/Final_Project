@@ -1,1 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Arial', sans-serif;
+  background: #b9bdde;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  margin-bottom: 20px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+button:last-child {
+  margin-right: 0;
+}
+
+.form-container {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.message {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.flash-error {
+  color: red;
+}
+
+.flash-success {
+  color: green;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #888;
+}
+
+#balance_heading {
+  margin: 25px 0;
+  font-size: 1.5rem;
+}
+
+#transaction-form {
+  display: none;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+#transaction-type-label {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#transaction-form-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+#transaction-form-inner label,
+#transaction-form-inner input[type="number"],
+#transaction-form-inner textarea,
+#transaction-form-inner button {
+  margin-bottom: 10px;
+}
+
+.transaction-form-button {
+  background-color: #0275d8;
+  color: white;
+}
+
+.transaction-form-button:hover {
+  background-color: #025aa5;
+}
+
+#transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+#transaction-table th,
+#transaction-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#transaction-table th {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+#transaction-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#transaction-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
